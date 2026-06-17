@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Dhruv Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <canvas id="matrix"></canvas>
+  <div id="prog"></div>
+
+  <!-- ════════ BOOT ════════ -->
+  <div id="boot">
+    <div id="bl"></div>
+  </div>
+
+  <!-- ════════ MAIN ════════ -->
+  <div id="main">
+
+    <!-- NAV -->
+    <nav>
+      <div class="np">dhruv<em>@portfolio</em><em style="color:var(--g)">:~</em></div>
+      <ul class="nl">
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="win">
+        <div class="wbar">
+          <div class="dot dr"></div>
+          <div class="dot dy"></div>
+          <div class="dot dg"></div>
+          <span class="wtit">dhruv@portfolio — zsh — 120×40</span>
+        </div>
+        <div class="wbody" id="term-body" onclick="document.getElementById('cmd-input').focus()">
+          <div class="hname">DHRUV<br>SHARMA</div>
+          <div class="hrole">&gt;&nbsp;<span id="tr"></span><span class="cblink"></span></div>
+
+          <div class="vp">
+            Building AI-powered applications<br>
+            and scalable cloud solutions.
+          </div>
+
+          <div class="metrics">
+            <div class="metric"><span class="mn">5+</span><span class="ml">ML Models</span></div>
+            <div class="metric"><span class="mn">30+</span><span class="ml">Technologies</span></div>
+            <div class="metric"><span class="mn">97%</span><span class="ml">Peak Accuracy</span></div>
+          </div>
+
+          <div id="term-output"></div>
+
+          <div class="pline interactive">
+            <span class="pu">dhruv</span><span class="ps">@</span><span class="pu">portfolio</span>
+            <span class="ps">:</span><span class="pp">~</span><span class="ps">$</span>
+            <input type="text" id="cmd-input" autocomplete="off" spellcheck="false" autofocus
+              placeholder="type 'help' and press Enter..." />
+          </div>
+
+          <div class="m-btns">
+            <button class="mbtn" onclick="runCmd('projects')">projects</button>
+            <button class="mbtn" onclick="runCmd('experience')">experience</button>
+            <button class="mbtn" onclick="runCmd('resume')">resume</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="sh">
+        <div class="sc">ls -la ./projects/</div>
+        <div class="st">Projects<span class="hl">_</span></div>
+        <hr class="div" />
+      </div>
+      <div class="pgrid">
+
+        <div class="pcard">
+          <div class="pch">
+            <span class="pn">DNA-Sequence-Matching-Tool</span>
+            <span class="pt">Java · Spring Boot</span>
+          </div>
+          <div class="pcb">
+            <div class="pd">Full-stack DNA sequence pattern-matching app. Implements KMP, Rabin-Karp, and Boyer-Moore on
+              the backend. Built as a DAA semester project with real bioinformatics use cases.</div>
+            <div class="stack">
+              <span class="stag">Java</span><span class="stag">Spring Boot</span>
+              <span class="stag">DSA</span><span class="stag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pch">
+            <span class="pn">Xplore-Map-Exploration-System</span>
+            <span class="pt">Web · Maps</span>
+          </div>
+          <div class="pcb">
+            <div class="pd">An interactive map exploration system. Built to help users navigate and explore geographic
+              data seamlessly.</div>
+            <div class="stack">
+              <span class="stag">Web</span><span class="stag">Maps API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pch">
+            <span class="pn">InvestEdge</span>
+            <span class="pt">Finance · Tech</span>
+          </div>
+          <div class="pcb">
+            <div class="pd">A financial technology platform designed to provide investment insights and an edge in the
+              market through data analysis.</div>
+            <div class="stack">
+              <span class="stag">FinTech</span><span class="stag">Data Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pch">
+            <span class="pn">AlertVision-Violence-Detection-System</span>
+            <span class="pt">AI · Computer Vision</span>
+          </div>
+          <div class="pcb">
+            <div class="pd">An AI-powered computer vision system capable of real-time violence detection from video
+              feeds to enhance security.</div>
+            <div class="stack">
+              <span class="stag">Computer Vision</span><span class="stag">Python</span>
+              <span class="stag">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard">
+          <div class="pch">
+            <span class="pn">FocusGuard</span>
+            <span class="pt">Productivity</span>
+          </div>
+          <div class="pcb">
+            <div class="pd">[Currently Building] A productivity and focus-guarding application to help maintain deep
+              work states and minimize distractions.</div>
+            <div class="stack">
+              <span class="stag">In Development</span><span class="stag">Productivity</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / ABOUT -->
+    <section id="experience">
+      <div class="sh">
+        <div class="sc">cat about.txt &amp;&amp; cat achievements.log</div>
+        <div class="st">Experience <span class="hl">&amp; About</span></div>
+        <hr class="div" />
+      </div>
+      <div class="agrid">
+        <div class="ach-grid">
+          <div class="tbox">
+            <div class="tbh">bio.md</div>
+            <div class="tbb abio">
+              <p><span style="color:var(--gd)">// </span>Data Science student passionate about finding patterns in
+                chaos.</p>
+              <p><span style="color:var(--gd)">// </span>I build machine learning models, cloud-native applications, and
+                full-stack systems with a focus on production-ready code.</p>
+            </div>
+          </div>
+          <div class="tbox">
+            <div class="tbh">achievements.log</div>
+            <div class="tbb">
+              <div class="ir"><span class="trophy">🏆</span> AWS Well-Architected Proficient</div>
+              <div class="ir"><span class="trophy">🏆</span> AWS Cloud Quest: Security & Cloud Practitioner</div>
+              <div class="ir"><span class="trophy">🏆</span> Anthropic Claude Platform & Code 101</div>
+              <div class="ir"><span class="trophy">🏆</span> Violence Detection System Test Accuracy: 97.73%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tbox">
+          <div class="tbh">github_stats.json</div>
+          <div class="tbb">
+            <div class="ir"><span class="ik">Repositories:</span><span class="iv">6</span></div>
+            <div class="ir"><span class="ik">Commits:</span><span class="iv">130</span></div>
+            <div style="margin-top:20px; text-align:center;">
+              <a href="https://github.com/Dhruv-Sharma29" target="_blank" class="btn"
+                style="width:100%; justify-content:center;">./view_github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="sh">
+        <div class="sc">grep -r "skills" ./resume.json</div>
+        <div class="st">Skills<span class="hl">.json</span></div>
+        <hr class="div" />
+      </div>
+      <div class="sgrid">
+
+        <div class="scat">
+          <div class="scath">languages</div>
+          <div class="scatb">
+            <div class="si">
+              <div class="sim"><span class="sn">Java</span><span class="sl">90%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="90"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Python</span><span class="sl">80%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="80"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Swift</span><span class="sl">75%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="75"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">JavaScript</span><span class="sl">65%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scat">
+          <div class="scath">cloud &amp; ml</div>
+          <div class="scatb">
+            <div class="si">
+              <div class="sim"><span class="sn">AWS (SageMaker, S3, CF)</span><span class="sl">80%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="80"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Machine Learning</span><span class="sl">75%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="75"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Reinforcement Learning</span><span class="sl">65%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="65"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">AWS Bedrock / LLMs</span><span class="sl">60%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scat">
+          <div class="scath">frameworks &amp; tools</div>
+          <div class="scatb">
+            <div class="si">
+              <div class="sim"><span class="sn">Spring Boot</span><span class="sl">80%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="80"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Git / GitHub</span><span class="sl">85%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="85"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">Xcode / iOS SDK</span><span class="sl">70%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="70"></div>
+              </div>
+            </div>
+            <div class="si">
+              <div class="sim"><span class="sn">REST APIs</span><span class="sl">75%</span></div>
+              <div class="sbar">
+                <div class="sbf" data-w="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="sh">
+        <div class="sc">./send_message.sh</div>
+        <div class="st">Contact<span class="hl">.sh</span></div>
+        <hr class="div" />
+      </div>
+      <div class="cgrid">
+
+        <div class="tbox">
+          <div class="tbh">connect.json</div>
+          <div class="tbb" style="padding:0 24px;">
+            <a href="https://github.com/Dhruv-Sharma29" target="_blank" class="clink">
+              <i class="ci">//</i>github.com/Dhruv-Sharma29
+            </a>
+          </div>
+        </div>
+
+        <div class="tbox">
+          <div class="tbh">send_message.sh — stdin</div>
+          <div class="tbb">
+            <div class="fl">
+              <label>name</label>
+              <input type="text" class="fi" placeholder="your_name" />
+            </div>
+            <div class="fl">
+              <label>email</label>
+              <input type="email" class="fi" placeholder="your@email.com" />
+            </div>
+            <div class="fl">
+              <label>message</label>
+              <textarea class="fi" placeholder="// write your message here..."></textarea>
+            </div>
+            <button class="btn" id="sbtn" onclick="doSend()" style="width:100%;justify-content:center;">
+              ./send_message
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>dhruv@portfolio:<span class="g">~</span>$ <span class="g"
+          style="animation:blink 1s steps(1) infinite;display:inline-block">_</span></span>
+      <span>Built with <span class="g">&lt;/&gt;</span> · 2026</span>
+    </footer>
+
+  </div><!-- #main -->
+
+  <!-- Fake resume download link -->
+  <a id="resume-download" href="#" download="Dhruv_Sharma_Resume.pdf" style="display:none;"></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
